@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Language School</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Language School Management System</h1>
+        <p>Simple student, course and instructor management</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="students.html">Students</a>
+        <a href="instructors.html">Instructors</a>
+        <a class="active" href="contact.html">Contact</a>
+    </nav>
+
+    <main class="container narrow-container">
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have a question? Send a message using the form below.</p>
+        </section>
+
+        <section class="panel">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Name</label>
+                    <input type="text" id="contactName" placeholder="Enter your name" required maxlength="60">
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" placeholder="Enter your email" required maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" placeholder="Enter subject" required maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" rows="5" placeholder="Write your message" required maxlength="1000"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="contactFeedback" class="form-message" role="status" aria-live="polite"></p>
+            <p class="demo-note">This beginner project checks the form and displays a message. It does not send an actual email.</p>
+        </section>
+
+        <section class="panel contact-details">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> language.school@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <p><strong>Address:</strong> Punjab, India</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">Copyright 2026 Language School</footer>
+</body>
+</html>
